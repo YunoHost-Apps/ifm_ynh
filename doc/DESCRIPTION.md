@@ -1,3 +1,5 @@
+The IFM is a web-based filemanager, which comes as a single file solution using HTML5, CSS3, JavaScript and PHP. 
+
 ### features
 
 - create/edit files and directories
