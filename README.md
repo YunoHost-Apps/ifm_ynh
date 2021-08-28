@@ -15,7 +15,17 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Improved File Manager
+### features
+
+- create/edit files and directories
+- copy/move files and directories
+- download files and directories
+- upload files directly, remotely via URL or per drag & drop
+- extract archives (tar, tgz, tar.gz, tar.bz2, zip)
+- change permissions
+- image preview
+- simple authentication (LDAP via ldap_bind possible)
+
 
 **Shipped version:** 2.6.3~ynh1
 
