@@ -11,19 +11,18 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ## Vue d'ensemble
 
-The IFM is a web-based filemanager, which comes as a single file solution using HTML5, CSS3, JavaScript and PHP. 
+L'IFM est un gestionnaire de fichiers basé sur le Web, qui se présente sous la forme d'un fichier unique utilisant HTML5, CSS3, JavaScript et PHP.
 
-### features
+### caractéristiques
 
-- create/edit files and directories
-- copy/move files and directories
-- download files and directories
-- upload files directly, remotely via URL or per drag & drop
-- extract archives (tar, tgz, tar.gz, tar.bz2, zip)
-- change permissions
-- image preview
-- simple authentication (LDAP via ldap_bind possible)
-
+- créer/éditer des fichiers et des répertoires
+- copier/déplacer des fichiers et des répertoires
+- télécharger des fichiers et des répertoires
+- télécharger des fichiers directement, à distance via URL ou par glisser-déposer
+- extraire les archives (tar, tgz, tar.gz, tar.bz2, zip)
+- modifier les autorisations
+- aperçu de l'image
+- authentification simple (LDAP via `ldap_bind` possible) 
 
 **Version incluse :** 2.6.3~ynh1
 
@@ -35,7 +34,7 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 
 ## Avertissements / informations importantes
 
-The IFM is usually locked to it's own directory (`/home/yunohost.app.ifm`), so you are not able to go above. You can change that by setting `env[IFM_ROOT_DIR] = /home/yunohost.app.ifm` in the PHP config `/etc/php/7.3/fpm/pool.d/ifm.conf` L.434 with this [documentation](https://github.com/misterunknown/ifm/wiki/Configuration).
+L'IFM est généralement verrouillé dans son propre répertoire (`/home/yunohost.app.ifm`), vous ne pouvez donc pas aller sur d'autres répertoires. Vous pouvez changer cela en définissant `env[IFM_ROOT_DIR] = /home/yunohost.app.ifm` dans la configuration PHP `/etc/php/7.3/fpm/pool.d/ifm.conf` L.434 en vous aidant de cette [documentation](https://github.com/misterunknown/ifm/wiki/Configuration). 
 ## Documentations et ressources
 
 * Site officiel de l'app : https://github.com/misterunknown/ifm
