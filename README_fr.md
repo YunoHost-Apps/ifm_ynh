@@ -31,6 +31,9 @@ Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour
 
 ![](./doc/screenshots/ifm_screenshot.png)
 
+## Avertissements / informations importantes
+
+The IFM is usually locked to it's own directory, so you are not able to go above. You can change that by setting the root_dir in the scripts [configuration](https://github.com/misterunknown/ifm/wiki/Configuration).
 ## Documentations et ressources
 
 * Site officiel de l'app : https://github.com/misterunknown/ifm
