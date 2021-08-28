@@ -15,7 +15,17 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Improved File Manager
+### features
+
+- create/edit files and directories
+- copy/move files and directories
+- download files and directories
+- upload files directly, remotely via URL or per drag & drop
+- extract archives (tar, tgz, tar.gz, tar.bz2, zip)
+- change permissions
+- image preview
+- simple authentication (LDAP via ldap_bind possible)
+
 
 **Shipped version:** 2.6.3~ynh1
 
@@ -25,6 +35,9 @@ Improved File Manager
 
 ![](./doc/screenshots/ifm_screenshot.png)
 
+## Disclaimers / important information
+
+The IFM is usually locked to it's own directory, so you are not able to go above. You can change that by setting the root_dir in the scripts [configuration](https://github.com/misterunknown/ifm/wiki/Configuration).
 ## Documentation and resources
 
 * Official app website: https://github.com/misterunknown/ifm

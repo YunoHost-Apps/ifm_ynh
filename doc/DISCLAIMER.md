@@ -1,0 +1,1 @@
+The IFM is usually locked to it's own directory, so you are not able to go above. You can change that by setting the root_dir in the scripts [configuration](https://github.com/misterunknown/ifm/wiki/Configuration).
