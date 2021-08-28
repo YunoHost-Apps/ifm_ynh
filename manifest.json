@@ -1,0 +1,52 @@
+{
+    "name": "IFM",
+    "id": "ifm",
+    "packaging_format": 1,
+    "description": {
+        "en": "Improved File Manager",
+        "fr": "Improved File Manager "
+    },
+    "version": "2.6.3~ynh1",
+    "url": "https://github.com/misterunknown/ifm",
+    "upstream": {
+        "license": "free",
+        "website": "https://example.com",
+        "demo": "https://ifmdemo.gitea.de/",
+        "admindoc": "https://yunohost.org/packaging_apps",
+        "userdoc": "https://yunohost.org/apps",
+        "code": "https://github.com/misterunknown/ifm"
+    },
+    "license": "free",
+    "maintainer": {
+        "name": "",
+        "email": ""
+    },
+    "requirements": {
+        "yunohost": ">= 4.2.4"
+    },
+    "multi_instance": true,
+    "services": [
+        "nginx",
+        "php7.3-fpm"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "example": "example.com"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "example": "/ifm",
+                "default": "/ifm"
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "default": true
+            }
+        ]
+    }
+}
