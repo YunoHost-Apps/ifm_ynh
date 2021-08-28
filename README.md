@@ -23,7 +23,7 @@ Improved File Manager
 
 ## Screenshots
 
-![](./doc/screenshots/example.jpg)
+![](./doc/screenshots/ifm_screenshot.png)
 
 ## Disclaimers / important information
 

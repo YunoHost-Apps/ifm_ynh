@@ -19,7 +19,7 @@ Improved File Manager
 
 ## Captures d'écran
 
-![](./doc/screenshots/example.jpg)
+![](./doc/screenshots/ifm_screenshot.png)
 
 ## Avertissements / informations importantes
 
