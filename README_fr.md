@@ -38,9 +38,7 @@ Improved File Manager
 
 ## Documentations et ressources
 
-* Site officiel de l'app : https://example.com
-* Documentation officielle utilisateur : https://yunohost.org/apps
-* Documentation officielle de l'admin : https://yunohost.org/packaging_apps
+* Site officiel de l'app : https://github.com/misterunknown/ifm
 * Dépôt de code officiel de l'app : https://github.com/misterunknown/ifm
 * Documentation YunoHost pour cette app : https://yunohost.org/app_ifm
 * Signaler un bug : https://github.com/YunoHost-Apps/ifm_ynh/issues
