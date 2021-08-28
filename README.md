@@ -40,7 +40,6 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 ## Disclaimers / important information
 
 The IFM is usually locked to it's own directory (`/home/yunohost.app/ifm`), so you are not able to go above. You can change that by setting `env[IFM_ROOT_DIR] = /home/yunohost.app/ifm` in the PHP config `/etc/php/7.3/fpm/pool.d/ifm.conf` L.434 with the help of this [documentation](https://github.com/misterunknown/ifm/wiki/Configuration).
-
 ## Documentation and resources
 
 * Official app website: https://github.com/misterunknown/ifm
