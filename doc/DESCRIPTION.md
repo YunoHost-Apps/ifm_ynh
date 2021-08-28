@@ -9,4 +9,4 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 - extract archives (tar, tgz, tar.gz, tar.bz2, zip)
 - change permissions
 - image preview
-- simple authentication (LDAP via ldap_bind possible)
+- simple authentication (LDAP via `ldap_bind` possible)
