@@ -9,14 +9,12 @@
     "version": "2.6.3~ynh1",
     "url": "https://github.com/misterunknown/ifm",
     "upstream": {
-        "license": "free",
-        "website": "https://example.com",
+        "license": "MIT",
+        "website": "https://github.com/misterunknown/ifm",
         "demo": "https://ifmdemo.gitea.de/",
-        "admindoc": "https://yunohost.org/packaging_apps",
-        "userdoc": "https://yunohost.org/apps",
         "code": "https://github.com/misterunknown/ifm"
     },
-    "license": "free",
+    "license": "MIT",
     "maintainer": {
         "name": "",
         "email": ""
