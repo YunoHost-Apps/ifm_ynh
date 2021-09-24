@@ -4,9 +4,9 @@
     "packaging_format": 1,
     "description": {
         "en": "Improved File Manager",
-        "fr": "Improved File Manager "
+        "fr": "Gestionnaire de fichiers amélioré"
     },
-    "version": "2.6.3~ynh1",
+    "version": "2.6.3~ynh2",
     "url": "https://github.com/misterunknown/ifm",
     "upstream": {
         "license": "MIT",
@@ -31,8 +31,7 @@
         "install" : [
             {
                 "name": "domain",
-                "type": "domain",
-                "example": "example.com"
+                "type": "domain"
             },
             {
                 "name": "path",
