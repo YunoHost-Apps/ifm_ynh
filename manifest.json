@@ -6,7 +6,7 @@
         "en": "Improved File Manager",
         "fr": "Gestionnaire de fichiers amélioré"
     },
-    "version": "2.6.3~ynh1",
+    "version": "2.6.3~ynh2",
     "url": "https://github.com/misterunknown/ifm",
     "upstream": {
         "license": "MIT",
