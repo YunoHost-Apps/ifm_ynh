@@ -1,0 +1,14 @@
+version = "1.0"
+
+[main]
+name = "IFM configuration"
+
+    [main.config]
+    name = "Configuration Options"
+    services = ["php8.0-fpm"]
+
+        [main.config.datadir]
+        ask = "Change data directory"
+        type = "path"
+        help = "Controls whether the player in the UI will animate the album cover"
+        bind = ":/etc/php/8.0/fpm/pool.d/__APP__.conf"
