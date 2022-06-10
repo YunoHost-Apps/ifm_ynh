@@ -1,6 +1,5 @@
-SOURCE_URL=https://github.com/misterunknown/ifm/releases/download/v2.6.3/ifm.php
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/misterunknown/ifm/releases/download/v4.0-rc2/ifm.php
+SOURCE_SUM=0bd14aec9f5b20bb7f0705298c3b3f4cf2f7df4cc87049659124fae16a92e9e2
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
-SOURCE_IN_SUBDIR=true
-SOURCE_EXTRACT=true
+SOURCE_IN_SUBDIR=false
+SOURCE_EXTRACT=false
