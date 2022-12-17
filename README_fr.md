@@ -28,7 +28,7 @@ L'IFM est un gestionnaire de fichiers basé sur le Web, qui se présente sous la
 - aperçu de l'image
 - authentification simple (LDAP via `ldap_bind` possible) 
 
-**Version incluse :** 2.6.3~ynh3
+**Version incluse :** 4.0.0~ynh1
 
 **Démo :** https://ifmdemo.gitea.de/
 
