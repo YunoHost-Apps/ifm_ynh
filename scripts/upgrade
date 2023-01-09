@@ -67,7 +67,7 @@ if [ "$upgrade_type" == "UPGRADE_APP" ]
 then
 	ynh_script_progression --message="Upgrading source files..." --weight=2
 
-	mv -f "../conf/ifm.php" "$final_path/ifm.php"
+	mv -f "../sources/ifm.php" "$final_path/ifm.php"
 fi
 
 chmod 750 "$final_path"
