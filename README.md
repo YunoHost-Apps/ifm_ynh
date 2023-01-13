@@ -29,7 +29,7 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 - simple authentication (LDAP via `ldap_bind` possible)
 
 
-**Shipped version:** 4.0.0~ynh1
+**Shipped version:** 4.0.0~ynh2
 
 **Demo:** https://ifmdemo.gitea.de/
 
@@ -42,7 +42,6 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 The IFM is usually locked to it's own directory (`/home/yunohost.app/ifm`), so you are not able to go above. You can change that by setting `env[IFM_ROOT_DIR] = /home/yunohost.app/ifm` in the PHP config `/etc/php/7.3/fpm/pool.d/ifm.conf` L.434 with the help of this [documentation](https://github.com/misterunknown/ifm/wiki/Configuration).
 ## Documentation and resources
 
-* Official app website: <https://github.com/misterunknown/ifm>
 * Upstream app code repository: <https://github.com/misterunknown/ifm>
 * YunoHost documentation for this app: <https://yunohost.org/app_ifm>
 * Report a bug: <https://github.com/YunoHost-Apps/ifm_ynh/issues>

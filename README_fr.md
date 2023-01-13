@@ -28,7 +28,7 @@ L'IFM est un gestionnaire de fichiers basé sur le Web, qui se présente sous la
 - aperçu de l'image
 - authentification simple (LDAP via `ldap_bind` possible) 
 
-**Version incluse :** 4.0.0~ynh1
+**Version incluse :** 4.0.0~ynh2
 
 **Démo :** https://ifmdemo.gitea.de/
 
@@ -41,7 +41,6 @@ L'IFM est un gestionnaire de fichiers basé sur le Web, qui se présente sous la
 L'IFM est généralement verrouillé dans son propre répertoire (`/home/yunohost.app/ifm`), vous ne pouvez donc pas aller sur d'autres répertoires. Vous pouvez changer cela en définissant `env[IFM_ROOT_DIR] = /home/yunohost.app/ifm` dans la configuration PHP `/etc/php/7.3/fpm/pool.d/ifm.conf` L.434 en vous aidant de cette [documentation](https://github.com/misterunknown/ifm/wiki/Configuration). 
 ## Documentations et ressources
 
-* Site officiel de l'app : <https://github.com/misterunknown/ifm>
 * Dépôt de code officiel de l'app : <https://github.com/misterunknown/ifm>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_ifm>
 * Signaler un bug : <https://github.com/YunoHost-Apps/ifm_ynh/issues>
