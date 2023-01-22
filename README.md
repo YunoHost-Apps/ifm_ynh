@@ -5,7 +5,7 @@ It shall NOT be edited by hand.
 
 # IFM for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/ifm.svg)](https://dash.yunohost.org/appci/app/ifm) ![Working status](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)  
+[![Integration level](https://dash.yunohost.org/integration/ifm.svg)](https://dash.yunohost.org/appci/app/ifm) ![Working status](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)
 [![Install IFM with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=ifm)
 
 *[Lire ce readme en français.](./README_fr.md)*
