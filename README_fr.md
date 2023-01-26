@@ -5,15 +5,15 @@ It shall NOT be edited by hand.
 
 # IFM pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/ifm.svg)](https://dash.yunohost.org/appci/app/ifm) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)  
+[![Niveau d’intégration](https://dash.yunohost.org/integration/ifm.svg)](https://dash.yunohost.org/appci/app/ifm) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)
 [![Installer IFM avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=ifm)
 
 *[Read this readme in english.](./README.md)*
 
-> *Ce package vous permet d'installer IFM rapidement et simplement sur un serveur YunoHost.
-Si vous n'avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l'installer et en profiter.*
+> *Ce package vous permet d’installer IFM rapidement et simplement sur un serveur YunoHost.
+Si vous n’avez pas YunoHost, regardez [ici](https://yunohost.org/#/install) pour savoir comment l’installer et en profiter.*
 
-## Vue d'ensemble
+## Vue d’ensemble
 
 L'IFM est un gestionnaire de fichiers basé sur le Web, qui se présente sous la forme d'un fichier unique utilisant HTML5, CSS3, JavaScript et PHP.
 
@@ -32,16 +32,16 @@ L'IFM est un gestionnaire de fichiers basé sur le Web, qui se présente sous la
 
 **Démo :** https://ifmdemo.gitea.de/
 
-## Captures d'écran
+## Captures d’écran
 
-![Capture d'écran de IFM](./doc/screenshots/ifm_screenshot.png)
+![Capture d’écran de IFM](./doc/screenshots/ifm_screenshot.png)
 
 ## Avertissements / informations importantes
 
 L'IFM est généralement verrouillé dans son propre répertoire (`/home/yunohost.app/ifm`), vous ne pouvez donc pas aller sur d'autres répertoires. Vous pouvez changer cela en définissant `env[IFM_ROOT_DIR] = /home/yunohost.app/ifm` dans la configuration PHP `/etc/php/7.3/fpm/pool.d/ifm.conf` L.434 en vous aidant de cette [documentation](https://github.com/misterunknown/ifm/wiki/Configuration). 
 ## Documentations et ressources
 
-* Dépôt de code officiel de l'app : <https://github.com/misterunknown/ifm>
+* Dépôt de code officiel de l’app : <https://github.com/misterunknown/ifm>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_ifm>
 * Signaler un bug : <https://github.com/YunoHost-Apps/ifm_ynh/issues>
 
@@ -57,4 +57,4 @@ ou
 sudo yunohost app upgrade ifm -u https://github.com/YunoHost-Apps/ifm_ynh/tree/testing --debug
 ```
 
-**Plus d'infos sur le packaging d'applications :** <https://yunohost.org/packaging_apps>
+**Plus d’infos sur le packaging d’applications :** <https://yunohost.org/packaging_apps>
