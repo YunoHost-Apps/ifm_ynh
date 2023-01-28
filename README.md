@@ -29,7 +29,7 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 - simple authentication (LDAP via `ldap_bind` possible)
 
 
-**Shipped version:** 4.0.0~ynh2
+**Shipped version:** 4.0.0~ynh3
 
 **Demo:** https://ifmdemo.gitea.de/
 
