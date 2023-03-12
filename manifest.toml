@@ -37,9 +37,9 @@ ram.runtime = "50M"
     default = "visitors"
 
 [resources]
-        [resources.sources.main]
-        url = "https://github.com/misterunknown/ifm/releases/download/v4.0.0/ifm.php"
-        sha256 = "59a888e454a083a420c074e303507e0efd41fb10272f52860c8e6d9cc640aea4"
+        #[resources.sources.main]
+        #url = "https://github.com/misterunknown/ifm/releases/download/v4.0.0/ifm.php"
+        #sha256 = "59a888e454a083a420c074e303507e0efd41fb10272f52860c8e6d9cc640aea4"
 
     [resources.system_user]
 
