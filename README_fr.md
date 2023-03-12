@@ -6,6 +6,7 @@ It shall NOT be edited by hand.
 # IFM pour YunoHost
 
 [![Niveau d’intégration](https://dash.yunohost.org/integration/ifm.svg)](https://dash.yunohost.org/appci/app/ifm) ![Statut du fonctionnement](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![Statut de maintenance](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)
+
 [![Installer IFM avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=ifm)
 
 *[Read this readme in english.](./README.md)*
@@ -36,9 +37,6 @@ L'IFM est un gestionnaire de fichiers basé sur le Web, qui se présente sous la
 
 ![Capture d’écran de IFM](./doc/screenshots/ifm_screenshot.png)
 
-## Avertissements / informations importantes
-
-L'IFM est généralement verrouillé dans son propre répertoire (`/home/yunohost.app/ifm`), vous ne pouvez donc pas aller sur d'autres répertoires. Vous pouvez changer cela en définissant `env[IFM_ROOT_DIR] = /home/yunohost.app/ifm` dans la configuration PHP `/etc/php/7.3/fpm/pool.d/ifm.conf` L.434 en vous aidant de cette [documentation](https://github.com/misterunknown/ifm/wiki/Configuration). 
 ## Documentations et ressources
 
 * Dépôt de code officiel de l’app : <https://github.com/misterunknown/ifm>
