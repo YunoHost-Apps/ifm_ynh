@@ -39,7 +39,6 @@ L'IFM est un gestionnaire de fichiers basé sur le Web, qui se présente sous la
 
 ## Documentations et ressources
 
-* Site officiel de l’app : <https://github.com/misterunknown/ifm>
 * Dépôt de code officiel de l’app : <https://github.com/misterunknown/ifm>
 * Documentation YunoHost pour cette app : <https://yunohost.org/app_ifm>
 * Signaler un bug : <https://github.com/YunoHost-Apps/ifm_ynh/issues>
