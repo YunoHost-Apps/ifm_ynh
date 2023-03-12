@@ -40,7 +40,6 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 
 ## Documentation and resources
 
-* Official app website: <https://github.com/misterunknown/ifm>
 * Upstream app code repository: <https://github.com/misterunknown/ifm>
 * YunoHost documentation for this app: <https://yunohost.org/app_ifm>
 * Report a bug: <https://github.com/YunoHost-Apps/ifm_ynh/issues>
