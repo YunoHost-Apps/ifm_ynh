@@ -1,13 +1,12 @@
 <?php
-/* =======================================================================
+/**
+ * =======================================================================
  * Improved File Manager
  * ---------------------
  * License: This project is provided under the terms of the MIT LICENSE
  * http://github.com/misterunknown/ifm/blob/master/LICENSE
  * =======================================================================
- *
- * main
-*/
+ */
 
 error_reporting(E_ALL);
 ini_set('display_errors', 0);
@@ -31,7 +30,6 @@ class IFM {
 		"tmp_dir" => "",
 		"timezone" => "",
 		"forbiddenChars" => [],
-		"dateLocale" => "en-US",
 		"language" => "en",
 		"selfoverwrite" => 0,
 		"session_name" => false,
@@ -48,6 +46,7 @@ class IFM {
 		"extract" => 1,
 		"upload" => 1,
 		"remoteupload" => 1,
+		"remoteupload_disable_ssrf_check" => 0,
 		"rename" => 1,
 		"zipnload" => 1,
 		"createarchive" => 1,
@@ -206,122 +205,7 @@ class IFM {
     "upload_overwrite_hint": "The following files will be overwritten:",
     "upload_remote": "Remote Upload",
     "upload_remote_url": "Remote Upload URL",
-    "username": "Username",
-    "word_wrap": "Word Wrap"
-}
-
-f00bar;
-$i18n["en"] = json_decode( $i18n["en"], true );
-$i18n["en"] = <<<'f00bar'
-{
-    "ajax_request": "AJAX request",
-    "archive_create_error": "Could not create archive.",
-    "archive_create_success": "Archive created.",
-    "archive_invalid_format": "Invalid archive format given.",
-    "archivename": "Name of the archive",
-    "cancel": "Cancel",
-    "close": "Close",
-    "copy": "Copy",
-    "copy_error": "The following files could not be copied:",
-    "copy_success": "Files copied.",
-    "copylink": "Copy link",
-    "create": "Create",
-    "create_archive": "Create archive",
-    "create_wo_close": "Create w/o close",
-    "data": "Data",
-    "delete": "Delete",
-    "directoryname": "Directory Name",
-    "download": "Download",
-    "edit": "Edit",
-    "editor_options": "Editor Options",
-    "error": "Error:",
-    "extract": "Extract",
-    "extract_error": "Could not extract archive.",
-    "extract_filename": "Extract file:",
-    "extract_success": "Archive extracted.",
-    "file_copy_to": "to",
-    "file_delete_confirm": "Do you really want to delete the following file:",
-    "file_delete_error": "Could not delete files.",
-    "file_delete_success": "Files deleted.",
-    "file_display_error": "This file cannot be displayed or edited.",
-    "file_load_error": "Could not load content.",
-    "file_new": "New file",
-    "file_no_permission": "No permission to edit/create file.",
-    "file_not_found": "Could either not find or open file.",
-    "file_open_error": "Could not open the file.",
-    "file_rename": "Rename File",
-    "file_rename_error": "File could not be renamed",
-    "file_rename_success": "File renamed.",
-    "file_save_confirm": "Do you want to save the following file:",
-    "file_save_error": "Could not save file.",
-    "file_save_success": "File saved.",
-    "file_upload_error": "Could not upload file.",
-    "file_upload_success": "File uploaded.",
-    "filename": "Filename",
-    "filename_new": "New Filename",
-    "filename_slashes": "Remove all slashes from the filename.",
-    "filter": "Filter",
-    "folder_create_error": "Could not create directory:",
-    "folder_create_success": "Directory created.",
-    "folder_new": "New Folder",
-    "folder_not_found": "Could not find the directory.",
-    "folder_tree_load_error": "Could not fetch folder tree.",
-    "footer": "IFM - improved file manager | ifm.php hidden |",
-    "general_error": "General error: No or broken response.",
-    "github": "Visit the project on GitHub",
-    "group": "Group",
-    "invalid_action": "Invalid action given.",
-    "invalid_archive_format": "Invalid archive format given. Possible formats are ZIP, TAR, tar.gz or tar.bz2.",
-    "invalid_data": "Invalid data from server.",
-    "invalid_dir": "Invalid directory given.",
-    "invalid_filename": "Invalid filename given.",
-    "invalid_params": "Invalid parameter given.",
-    "invalid_url": "Invalid URL given.",
-    "json_encode_error": "Could not format the response as JSON:",
-    "last_modified": "Last Modified",
-    "load_config_error": "Could not load configuration.",
-    "load_template_error": "Could not load templates.",
-    "load_text_error": "Could not load texts.",
-    "login": "Login",
-    "login_failed": "Login failed.",
-    "logout": "Log Off",
-    "method": "Method",
-    "move": "Move",
-    "move_error": "The following files could not be moved:",
-    "move_success": "Files moved.",
-    "nopermissions": "You lack the permissions to do that.",
-    "options": "Options",
-    "owner": "Owner",
-    "password": "Password",
-    "path_content": "Current directory",
-    "pattern_error_slashes": "Pattern cannot contain slashes.",
-    "permission_change_error": "Could not change permissions:",
-    "permission_change_success": "Permissions changed.",
-    "permission_parse_error": "Could not parse permissions.",
-    "permissions": "Permissions",
-    "refresh": "Refresh",
-    "remaining_tasks": "There are remaining tasks. Do you really want to reload?",
-    "rename": "Rename",
-    "rename_filename": "Rename file:",
-    "request": "Request",
-    "response": "Response",
-    "save": "Save",
-    "save_wo_close": "Save without Closing",
-    "search": "Search",
-    "search_pattern": "Pattern",
-    "select_destination": "Select Destination",
-    "size": "Size",
-    "soft_tabs": "Soft Tabs",
-    "tab_size": "Tab Size",
-    "tasks": "Tasks",
-    "toggle_nav": "Toggle navigation",
-    "upload": "Upload",
-    "upload_drop": "Drop files to upload",
-    "upload_file": "Upload File",
-    "upload_overwrite_confirm": "Upload anyway?",
-    "upload_overwrite_hint": "The following files will be overwritten:",
-    "upload_remote": "Remote Upload",
-    "upload_remote_url": "Remote Upload URL",
+    "url_not_allowed": "This URL is not allowed.",
     "username": "Username",
     "word_wrap": "Word Wrap"
 }
@@ -2681,7 +2565,7 @@ function IFM(params) {
 	this.formatDate = function( timestamp ) {
 		let d = new Date( timestamp * 1000 );
 
-		return d.toLocaleString(self.config.dateLocale);
+		return d.toLocaleString(navigator.language || "en-US");
 	};
 
 	this.getClipboardLink = function( relpath ) {
@@ -3611,7 +3495,7 @@ f00bar;
 	<div class="container">
 		<div class="card ifminfo">
 			<div class="card-body p-2">
-				<div style="float:left; padding-left: 10px;">{{i18n.footer}} <a href='https://github.com/misterunknown/ifm/tree/v4.0' target=_blank>v4.0</a></div>
+				<div style="float:left; padding-left: 10px;">{{i18n.footer}} <a href='https://github.com/misterunknown/ifm/tree/v4.0.2' target=_blank>v4.0.2</a></div>
 				<a style="float:right; padding-right: 10px;" href="http://github.com/misterunknown/ifm" target="_blank">{{i18n.github}}</a>
 			</div>
 		</div>
@@ -4669,17 +4553,19 @@ f00bar;
 		if (!isset($d['method']) || !in_array($d['method'], ["curl", "file"]))
 			throw new IFMException($this->l('invalid_params'));
 
+		if ($this->config['remoteupload_disable_ssrf_check'] != 1)
+			if (!$this->checkUrlSsrf($d['url']))
+				throw new IFMException($this->l('url_not_allowed'));
+
 		if ($d['method'] == "curl" && $this->checkCurl() == false)
 			throw new IFMException($this->l('error')." cURL extention not installed.");
 
-		if ($d['method'] == "curl" && $this->checkCurl() == true) {
+		if ($d['method'] == "curl") {
 			$filename = (isset($d['filename']) && $d['filename'] != "") ? $d['filename'] : "curl_".uniqid();
 			$ch = curl_init();
 			if ($ch) {
 				if ($this->isFilenameValid($filename) == false)
 					throw new IFMException($this->l('invalid_filename'));
-				elseif (filter_var($d['url'], FILTER_VALIDATE_URL) === false)
-					throw new IFMException($this->l('invalid_url'));
 				else {
 					$fp = fopen($filename, "w");
 					if ($fp) {
@@ -4757,8 +4643,8 @@ f00bar;
 		}
 	}
 
-	/*
-	   help functions
+	/**
+	 * help functions
 	 */
 
 	private function l($str) {
@@ -5124,6 +5010,54 @@ f00bar;
 			return true;
 	}
 
+	/**
+	 * This function checks the URL for potential SSRF attacks. Allowed is only
+	 * http/ftp and only global IP addresses. You can disable the SSRF check in
+	 * the configuration.
+	 */
+	public function checkUrlSsrf($url) {
+		if (!filter_var($url, FILTER_VALIDATE_URL))
+			return false;
+
+		$parts = parse_url($url);
+
+		if (!$parts)
+			return false;
+
+		// no host is not acceptable
+		if (!isset($parts['host']))
+			return false;
+
+		// other protocols than http(s) or ftp are not allowed (curl assumes http per default)
+		if (isset($parts['scheme']) && !in_array(strtolower($parts['scheme']), ['http', 'https', 'ftp']))
+			return false;
+
+		// if the host is no IP, resolve the hostname
+		$ips = [];
+		if (filter_var($parts['host'], FILTER_VALIDATE_IP))
+			array_push($ips, $parts['host']);
+		else
+			$ips = array_merge($ips, array_map(function($i) { return $i['ip'] ?? $i['ipv6']; }, dns_get_record($parts['host'], DNS_A + DNS_AAAA)));
+
+		if (empty($ips))
+			return false;
+
+		// check if any of the IPs is not global, if so then fail
+		foreach ($ips as $ip) {
+			if (version_compare(PHP_VERSION, '8.2.0') >= 0) {
+				if (!filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_GLOBAL_RANGE)) {
+					return false;
+				}
+			} else {
+				if (!filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE + FILTER_FLAG_NO_RES_RANGE)) {
+					return false;
+				}
+			}
+		}
+
+		return true;
+	}
+
 	private function fileDownload(array $options) {
 		if (!isset($options['name']) || trim($options['name']) == "")
 			$options['name'] = basename($options['file']);
@@ -5166,7 +5100,7 @@ f00bar;
  * 	* tar
  * 	* tar.gz
  * 	* tar.bz2
-*/
+ */
 
 class IFMArchive {
 
