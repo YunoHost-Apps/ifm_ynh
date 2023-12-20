@@ -5,7 +5,7 @@ name = "IFM"
 description.en = "Improved File Manager"
 description.fr = "Gestionnaire de fichiers amélioré"
 
-version = "4.0.2~ynh1"
+version = "4.0.2~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -40,9 +40,11 @@ ram.runtime = "50M"
     default = "visitors"
 
 [resources]
-        #[resources.sources.main]
-        #url = "https://github.com/misterunknown/ifm/releases/download/v4.0.0/ifm.php"
-        #sha256 = "59a888e454a083a420c074e303507e0efd41fb10272f52860c8e6d9cc640aea4"
+        [resources.sources.main]
+        in_subdir = false
+        extract = false
+        url = "https://github.com/misterunknown/ifm/releases/download/v4.0.2/ifm.php"
+        sha256 = "902e45ef45a5a2c1fc8a1186f1acf3f4588071791e4bc8175de067eb33070594"
 
     [resources.system_user]
 
@@ -55,5 +57,5 @@ ram.runtime = "50M"
 
     [resources.apt]
 
-    packages = "php8.0-zip, php8.0-curl, php8.0-mbstring, php8.0-ldap, php8.0-json, php8.0-xml"
+    packages = "php8.2-zip, php8.2-curl, php8.2-mbstring, php8.2-ldap, php8.2-xml"
 
