@@ -55,5 +55,5 @@ ram.runtime = "50M"
 
     [resources.apt]
 
-    packages = "php8.0-zip php8.0-curl php8.0-mbstring php8.0-ldap php8.0-json php8.0-xml"
+    packages = "php8.0-zip, php8.0-curl, php8.0-mbstring, php8.0-ldap, php8.0-json, php8.0-xml"
 
