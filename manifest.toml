@@ -46,6 +46,7 @@ ram.runtime = "50M"
         url = "https://github.com/misterunknown/ifm/releases/download/v4.0.2/ifm.php"
         sha256 = "902e45ef45a5a2c1fc8a1186f1acf3f4588071791e4bc8175de067eb33070594"
         rename = "ifm.php"
+        autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
