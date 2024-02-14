@@ -7,7 +7,7 @@ description.fr = "Gestionnaire de fichiers amélioré"
 
 version = "4.0.2~ynh2"
 
-maintainers = ["eric_G"]
+maintainers = []
 
 [upstream]
 license = "MIT"
