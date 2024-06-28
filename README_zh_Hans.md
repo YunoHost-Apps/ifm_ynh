@@ -5,7 +5,7 @@
 
 # YunoHost 上的 IFM
 
-[![集成程度](https://dash.yunohost.org/integration/ifm.svg)](https://dash.yunohost.org/appci/app/ifm) ![工作状态](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/ifm.svg)](https://ci-apps.yunohost.org/ci/apps/ifm/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)
 
 [![使用 YunoHost 安装 IFM](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=ifm)
 
