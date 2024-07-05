@@ -5,7 +5,7 @@ NON debe editarse manualmente.
 
 # IFM para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/ifm.svg)](https://dash.yunohost.org/appci/app/ifm) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/ifm.svg)](https://ci-apps.yunohost.org/ci/apps/ifm/) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)
 
 [![Instalar IFM con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=ifm)
 
@@ -30,7 +30,7 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 - simple authentication (LDAP via `ldap_bind` possible)
 
 
-**Versión proporcionada:** 4.0.2~ynh3
+**Versión proporcionada:** 4.0.2~ynh4
 
 **Demo:** <https://ifmdemo.gitea.de/>
 
