@@ -30,7 +30,7 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 - simple authentication (LDAP via `ldap_bind` possible)
 
 
-**Versión actual:** 4.0.2~ynh4
+**Versión actual:** 4.0.2~ynh5
 
 **Demo:** <https://ifmdemo.gitea.de/>
 
@@ -46,7 +46,7 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/ifm_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/ifm_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 
