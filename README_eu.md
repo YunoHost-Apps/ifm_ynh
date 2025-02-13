@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # IFM YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/ifm.svg)](https://ci-apps.yunohost.org/ci/apps/ifm/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/ifm.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/ifm.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/ifm)](https://ci-apps.yunohost.org/ci/apps/ifm/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/ifm)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/ifm)
 
 [![Instalatu IFM YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=ifm)
 
@@ -30,7 +32,7 @@ The IFM is a web-based filemanager, which comes as a single file solution using 
 - simple authentication (LDAP via `ldap_bind` possible)
 
 
-**Paketatutako bertsioa:** 4.0.2~ynh5
+**Paketatutako bertsioa:** 4.0.2~ynh6
 
 **Demoa:** <https://ifmdemo.gitea.de/>
 
