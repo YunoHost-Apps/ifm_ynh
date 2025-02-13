@@ -1,3 +1,5 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
 packaging_format = 2
 
 id = "ifm"
@@ -5,7 +7,7 @@ name = "IFM"
 description.en = "Improved File Manager"
 description.fr = "Gestionnaire de fichiers amélioré"
 
-version = "4.0.2~ynh5"
+version = "4.0.2~ynh6"
 
 maintainers = []
 
@@ -15,7 +17,7 @@ demo = "https://ifmdemo.gitea.de/"
 code = "https://github.com/misterunknown/ifm"
 
 [integration]
-yunohost = ">= 11.2.29"
+yunohost = ">= 11.2.30"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -41,13 +43,13 @@ ram.runtime = "50M"
     default = "visitors"
 
 [resources]
-        [resources.sources.main]
-        in_subdir = false
-        extract = false
-        url = "https://github.com/misterunknown/ifm/releases/download/v4.0.2/ifm.php"
-        sha256 = "902e45ef45a5a2c1fc8a1186f1acf3f4588071791e4bc8175de067eb33070594"
-        rename = "ifm.php"
-        autoupdate.strategy = "latest_github_tag"
+    [resources.sources.main]
+    in_subdir = false
+    extract = false
+    url = "https://github.com/misterunknown/ifm/releases/download/v4.0.2/ifm.php"
+    sha256 = "902e45ef45a5a2c1fc8a1186f1acf3f4588071791e4bc8175de067eb33070594"
+    rename = "ifm.php"
+    autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
@@ -64,5 +66,4 @@ ram.runtime = "50M"
     api.auth_header = false
 
     [resources.apt]
-
     packages = "php8.2-zip, php8.2-bz2, php8.2-gd, php8.2-curl, php8.2-mbstring, php8.2-ldap, php8.2-xml"
