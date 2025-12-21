@@ -7,7 +7,7 @@ name = "IFM"
 description.en = "Improved File Manager"
 description.fr = "Gestionnaire de fichiers amélioré"
 
-version = "4.0.2~ynh6"
+version = "4.1.1~ynh1"
 
 maintainers = []
 
@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources.main]
     in_subdir = false
     extract = false
-    url = "https://github.com/misterunknown/ifm/releases/download/v4.0.2/ifm.php"
-    sha256 = "902e45ef45a5a2c1fc8a1186f1acf3f4588071791e4bc8175de067eb33070594"
+    url = "https://github.com/misterunknown/ifm/archive/refs/tags/v4.1.1.tar.gz"
+    sha256 = "f2f37fa27fb5054ff179d52afae0595e535f769a43a66c9d99c008bed8f2334a"
     rename = "ifm.php"
     autoupdate.strategy = "latest_github_tag"
 
