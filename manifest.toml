@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources.main]
     in_subdir = false
     extract = false
-    url = "https://github.com/misterunknown/ifm/archive/refs/tags/v4.1.1.tar.gz"
-    sha256 = "f2f37fa27fb5054ff179d52afae0595e535f769a43a66c9d99c008bed8f2334a"
+    url = "https://github.com/misterunknown/ifm/releases/download/v4.1.1/ifm.php"
+    sha256 = "8315720afdf44ef0c4717f28bb6d3acb6b77b65bdd54dd7417bb961fe1eafcab"
     rename = "ifm.php"
     autoupdate.strategy = "latest_github_tag"
 
