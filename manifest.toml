@@ -7,7 +7,7 @@ name = "IFM"
 description.en = "Improved File Manager"
 description.fr = "Gestionnaire de fichiers amélioré"
 
-version = "4.1.2~ynh1"
+version = "4.2.1~ynh1"
 
 maintainers = []
 
@@ -17,7 +17,7 @@ demo = "https://ifmdemo.gitea.de/"
 code = "https://github.com/misterunknown/ifm"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -45,8 +45,8 @@ ram.runtime = "50M"
     [resources.sources.main]
     in_subdir = false
     extract = false
-    url = "https://github.com/misterunknown/ifm/releases/download/v4.1.2/ifm.php"
-    sha256 = "b4d521350f1a4005c4473ca7a16da059f66173a00acb9ea7a6845aa87bcd411b"
+    url = "https://github.com/misterunknown/ifm/releases/download/v4.2.1/ifm.php"
+    sha256 = "6684cf90c98d260f8e81a5a323735e9bc21fc151e9bf8f3362f02e9f97be3721"
     rename = "ifm.php"
     autoupdate.strategy = "latest_github_release"
     autoupdate.asset = "ifm.php"
@@ -66,4 +66,4 @@ ram.runtime = "50M"
     api.auth_header = false
 
     [resources.apt]
-    packages = "php8.4-zip, php8.4-bz2, php8.4-gd, php8.4-curl, php8.4-mbstring, php8.4-ldap, php8.4-xml"
+    packages = "php8.5-zip, php8.5-bz2, php8.5-gd, php8.5-curl, php8.5-mbstring, php8.5-ldap, php8.5-xml"
